@@ -1,0 +1,27 @@
+extends ../layout
+
+block content
+  .wrapper
+    .login_box
+      .login-header
+        span Join
+        
+      .input_box
+        input#user.input-field(type='text' required)
+        label(for='user').label Username
+        i.bx.bx-user.icon
+
+      .input_box
+        input#pass.input-field(type='password' required)
+        label(for='pass').label Password
+        i.bx.bx-lock-alt.icon
+
+      .remember-forgot
+        .remember-me
+          input#remember(type='checkbox')
+          label(for='remember') Remember me
+        .forgot
+          a(href='/forgotPassword') Forgot password?
+
+      .input_box
+        input.input-submit(type='submit' value='Login')
